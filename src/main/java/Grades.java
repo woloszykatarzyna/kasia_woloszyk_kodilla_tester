@@ -1,11 +1,12 @@
 public class Grades {
     private int[] grades;
     private int size;
+    int grade;
 
-    public Grades() {
+    public Grades(int grade) {
         this.grades = new int[10];
         this.size = 0;
-
+        this.grade = grade;
 
 
     }
