@@ -15,6 +15,6 @@ public class LoopsWhile {
             sum = sum + temp;
             result++;
         }
-        return result;
+        return result; // zwraca liczbę powtórzeń w pętli
     }
 }
