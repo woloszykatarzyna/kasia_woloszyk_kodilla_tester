@@ -1,14 +1,16 @@
 import java.util.Random;
 
 public class RandomNumbers {
+    private int result = 0;
+    private int sum = 0;
+    private int min = 30;
+    private int max = 0;
+    private int limit = 5000;
 
-    public static void main(String[] args) {
+
+
+    public void RandomNumbers() {
         Random random = new Random();
-        int result = 0;
-        int sum = 0;
-        int min = 30;
-        int max = 0;
-        int limit = 5000;
         while (sum < limit) {
             int temp = random.nextInt(31);
 
@@ -25,11 +27,20 @@ public class RandomNumbers {
             result++;
         }
 
-        System.out.println(min);
-        System.out.println(max);
-
+    }
+    public int getMin() {
+        return min;
     }
 
+    public int getMax() {
+        return max;
+    }
 
+    public static void main(String[] args) {
+    RandomNumbers n = new RandomNumbers();
+
+        System.out.println(n.getMin());
+        System.out.println(n.getMax());
+    }
 }
 
