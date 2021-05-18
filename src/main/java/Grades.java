@@ -16,30 +16,41 @@ public class Grades {
         }
         this.grades[this.size] = value;
         this.size++;
+        System.out.println(value);
     }
 
 
-    public void lastGrade() {
+    public int lastGrade() {
         if (this.size != 0) {
             int last = grades[this.size - 1];
-            System.out.println(last);
+            return last;
         } else {
-            System.out.println("No grades yet");
+            return 0;
         }
     }
 
+    public double averageGrade() {
 
-    public void averageGrade() {
-        if (this.size != 0) {
-            int suma = 0;
-            for (int i = 0; i < grades.length; i++) {
-                suma = grades[i] + suma;
-            }
-            System.out.println();
-            System.out.println("Wynik sumowania: " + suma);
-            double avg = (double) suma / this.size;
-
-            System.out.println("Srednia arytmetyczna: " + avg);
+        double result = 0;
+        for (int i = 0; i < this.size; i++) {
+            result = result + grades[i];
         }
+        double average = result / this.size;
+        return average;
     }
 }
+
+
+
+  //  public void averageGrade() {
+    //    if (this.size != 0) {
+       //     int suma = 0;
+          //  for (int i = 0; i < grades.length; i++) {
+           //     suma = grades[i] + suma;
+            //}
+            //System.out.println();
+            //System.out.println("Wynik sumowania: " + suma);
+            //double avg = (double) suma / this.size;
+
+            //System.out.println("Srednia arytmetyczna: " + avg);
+        //}
