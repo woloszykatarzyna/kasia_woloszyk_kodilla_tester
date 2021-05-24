@@ -2,11 +2,17 @@ package com.kodilla.abstracts.homework;
 
 public class ApplicationShape {
     public static void main(String[] args) {
-        ShapeChild1 shapeChild1 = new ShapeChild1();
-        shapeChild1.textCircle();
+        Circle circle = new Circle();
+        circle.area();
+        circle.circumference();
 
-        ShapeChild2 shapeChild2 = new ShapeChild2();
-        shapeChild2.textCircle();
+        Rectangle rectangle = new Rectangle();
+        rectangle.area();
+        rectangle.circumference();
+
+        Triangle triangle = new Triangle();
+        triangle.area();
+        triangle.circumference();
 
     }
 }
