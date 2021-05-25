@@ -4,13 +4,18 @@ public abstract class Job {
 
     int salary;
     String responsibilities;
+    String job;
 
-    public Job(int salary, String responsibilities) {
+    public Job(int salary, String responsibilities, String job) {
 
         this.salary = salary;
         this.responsibilities = responsibilities;
+        this.job = job;
     }
-    public String jobResponsibilities() {
-        return responsibilities;
-    }
+
+    //public String showResponsibilities() {
+    //    return responsibilities;
+    //}
+    //public String jobTitle() {
+    //    return job;
 }

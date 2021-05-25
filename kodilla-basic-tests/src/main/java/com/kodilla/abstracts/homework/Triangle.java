@@ -1,16 +1,20 @@
 package com.kodilla.abstracts.homework;
 
 public class Triangle extends Shape {
+    private int a;
+    private int h;
+    private int b;
+    private int c;
 
-    public Triangle() {
-        super (0, 4, 8, 3, 9);
+public Triangle() {
+        super ();
     }
 
     @Override
     public void area() {
         double result;
-        int a = getA();
-        int h = getH();
+        this.a = 5;
+        this.h = 6;
         result = 0.5 * a * h;
         System.out.println("Triangle area: " + result);
     }
@@ -18,9 +22,9 @@ public class Triangle extends Shape {
     @Override
     public void circumference() {
         double result;
-        int a = getA();
-        int b = getB();
-        int c = getC();
+        this.a = 5;
+        this.b = 2;
+        this.c = 6;
         result = a + b + c;
         System.out.println("Triangle circumference: " + result);
     }

@@ -3,14 +3,20 @@ package com.kodilla.abstracts.homework;
 public class Person {
     String firstName;
     int age;
-    String job;
-    public Person(String firstName, int age, String job){
+    Job job;
+
+    public Person(String firstName, int age, Job job){
         this.firstName = firstName;
         this.age = age;
         this.job = job;
     }
 
-    public void process(Job person) {
-        System.out.println(firstName + " " + age + " " + job + " " + person.jobResponsibilities());
+    public void process() {
+        System.out.println(firstName + " " + age);
+    }
+
+    public void showResponsibilities(){
+        System.out.println(firstName + " " + age + " " + job.job);
+        System.out.println(job.responsibilities);
     }
 }

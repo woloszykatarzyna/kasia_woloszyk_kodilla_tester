@@ -1,16 +1,17 @@
 package com.kodilla.abstracts.homework;
 
-
 public class Circle extends Shape {
+    static final double PI = 3.1415927;
+   private int r;
 
     public Circle() {
-        super (9, 0,0 ,0 ,0);
+        super ();
     }
 
     @Override
     public void area() {
         double result;
-        double r = getR();
+        this.r = 9;
         result = PI * r * r;
         System.out.println("Circle area: " +result);
     }
@@ -18,7 +19,7 @@ public class Circle extends Shape {
     @Override
     public void circumference() {
         double result;
-        double r = getR();
+        this.r = 9;
         result = 2 * PI * r;
         System.out.println("Circumference of a circle: " + result);
     }

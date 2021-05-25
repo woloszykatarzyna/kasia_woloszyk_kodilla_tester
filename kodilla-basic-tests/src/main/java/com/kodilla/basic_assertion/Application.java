@@ -11,11 +11,18 @@ public class Application {
             System.out.println("Metoda sum nie działa poprawnie dla liczb");
         }
         int substractResult = calculator.subtractionNumbers();
-        boolean correct = ResultChecker.assertEquals(3, substractResult);
-        if (correct) {
+        boolean correct2 = ResultChecker.assertEquals(3, substractResult);
+        if (correct2) {
             System.out.println("Metoda odejmowania działa poprawnie dla liczb");
         } else {
             System.out.println("Metoda odejmowania nie działa poprawnie dla liczb");
+        }
+        int squareResult = calculator.squareNumbers();
+        boolean correct3 = ResultChecker.assertEquals(64, squareResult);
+        if (correct3) {
+            System.out.println("Metoda podnoszenia do kwadratu działa poprawnie dla liczb");
+        } else {
+            System.out.println("Metoda kwadratu nie działa poprawnie dla liczb");
         }
     }
 }

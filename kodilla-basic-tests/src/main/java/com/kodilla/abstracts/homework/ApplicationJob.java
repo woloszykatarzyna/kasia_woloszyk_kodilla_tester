@@ -2,19 +2,16 @@ package com.kodilla.abstracts.homework;
 
 public class ApplicationJob {
     public static void main(String[] args) {
-        Job hydraulik = new Hydraulik();
 
-        Person processorHydraulik = new Person("Jan", 50, "Hydraulik");
-        processorHydraulik.process(hydraulik);
 
-        Job drwal = new Drwal();
+        Person hydraulik = new Person("Jan", 50, new Hydraulik());
+        hydraulik.showResponsibilities();
 
-        Person processorDrwal = new Person("Tadeusz", 20, "Drwal");
-        processorDrwal.process(drwal);
+        Person drwal = new Person("Kazio", 60, new Drwal());
+        drwal.showResponsibilities();
 
-        Job elektryk = new Elektryk();
+        Person elektryk = new Person("Tadzio", 70, new Elektryk());
+        elektryk.showResponsibilities();
+}
 
-        Person processorElektryk = new Person("Kazimierz", 30, "Elektryk");
-        processorElektryk.process(elektryk);
-    }
 }
