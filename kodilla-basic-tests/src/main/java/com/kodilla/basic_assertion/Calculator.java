@@ -4,30 +4,18 @@ import java.util.Scanner;
 
 
 public class Calculator {
-    private static int a;
-    private static int b;
 
 
-    public Calculator() {
 
-        this.a = 8;
-        this.b = 5;
-    }
+        public int sum(int a, int b) {
+            return a + b;
+        }
 
-    public static int addingNumbers() {
-        int result;
-        result = a + b;
-        return result;
+        public int subtract(int a, int b) {
+            return a - b;
+        }
 
-    }
-    public static int subtractionNumbers(){
-        int result;
-        result = a - b;
-        return result;
-    }
-    public static int squareNumbers(){
-        int result;
-        result = a * a;
-        return result;
-    }
+        public int square(int a){
+        return a * a;
+        }
 }
