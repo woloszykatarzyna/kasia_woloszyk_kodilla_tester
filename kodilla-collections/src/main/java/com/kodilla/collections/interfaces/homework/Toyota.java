@@ -20,4 +20,11 @@ public class Toyota implements Car{
     public void decreaseSpeed() {
         v -= 30;
     }
+
+    @Override
+    public String toString() {
+        return "Toyota{" +
+                "v=" + v +
+                '}';
+    }
 }
