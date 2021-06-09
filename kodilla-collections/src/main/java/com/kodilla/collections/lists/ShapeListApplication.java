@@ -16,5 +16,6 @@ public class ShapeListApplication {
             if (square.getArea() > 20)
                 System.out.println(square + ", area: " + square.getArea());
         }
+
     }
 }
