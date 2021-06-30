@@ -2,7 +2,7 @@ package com.kodilla.collections.adv.immutable.special.homework;
 
 import java.util.Objects;
 
-public final class Book {                       // [1]
+public final class Book {
 
     protected final String author;
     protected final String title;

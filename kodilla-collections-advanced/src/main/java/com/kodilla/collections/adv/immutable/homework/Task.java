@@ -2,8 +2,8 @@ package com.kodilla.collections.adv.immutable.homework;
 
 public final class Task {
 
-    protected final int duration;
-    protected final String title;
+    private final int duration;
+    private final String title;
 
     public Task(int duration, String title) {
         this.duration = duration;

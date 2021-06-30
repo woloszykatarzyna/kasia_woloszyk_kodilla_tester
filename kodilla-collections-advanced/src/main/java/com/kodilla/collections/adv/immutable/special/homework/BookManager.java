@@ -9,16 +9,12 @@ public class BookManager {
 
     public static Book createBook(String title, String author) {
         Book x = new Book(title, author);
-        checkList(x);
         books.add(x);
-        return x;
-    }
-
-    private static void checkList(Book b){
-        for (Book book : books) {
-            if (book.getAuthor() == b.getAuthor() && book.getTitle() == b.getTitle()) {
-                System.out.println("Jest");
-            }
+        if (books.contains(x)) {
+            return x;
+        } else {
+            books.add(x);
+            return x;
         }
     }
 }
