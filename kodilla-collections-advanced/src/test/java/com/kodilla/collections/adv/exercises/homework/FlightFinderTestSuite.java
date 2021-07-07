@@ -13,9 +13,9 @@ import static org.junit.jupiter.api.Assertions.*;
 class FlightFinderTestSuite {
     @Test
     public void testFindFlightFrom() {
-        FlightFinder loty = FlightRepository.getFlightsTable();
+        List<Flight> departures = FlightRepository.getFlightsTable();
 ;
-        List<Flight> result = loty.findFlightsFrom("Wrocław");
+        List<Flight> result = FlightFinder.findFlightsFrom("Wrocław");
 
         List<Flight> expectedList = new ArrayList<>();
         expectedList.add(new Flight("Wrocław", "Lublin"));
@@ -25,9 +25,9 @@ class FlightFinderTestSuite {
 
     @Test
     public void testFindFlightTo() {
-        FlightFinder loty = FlightRepository.getFlightsTable();
+        List<Flight> arrivals = FlightRepository.getFlightsTable();
 
-        List<Flight> result = loty.findFlightsTo("Wrocław");
+        List<Flight> result = FlightFinder.findFlightsTo("Wrocław");
 
         List<Flight> expectedList = new ArrayList<>();
         expectedList.add(new Flight("Wrocław", "Lublin"));
