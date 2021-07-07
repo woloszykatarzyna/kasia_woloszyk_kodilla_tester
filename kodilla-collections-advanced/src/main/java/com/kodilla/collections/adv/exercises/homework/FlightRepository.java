@@ -1,13 +1,18 @@
 package com.kodilla.collections.adv.exercises.homework;
 
 
+import java.util.List;
+
+import static java.util.Arrays.asList;
+
 public class FlightRepository {
-    public static FlightFinder getFlightsTable() {
-        FlightFinder loty = new FlightFinder();
-        loty.addFlight("Wrocław", new Flight("Wrocław", "Lublin"));
-        loty.addFlight("Wrocław", new Flight("Wrocław", "Gdańsk"));
-        loty.addFlight("Lublin", new Flight("Lublin", "Gdańsk"));
-        loty.addFlight("Lublin", new Flight("Lublin", "Wrocław"));
+    public static List<List<String>> getFlightsTable() {
+        List<List<String>> loty = asList(
+
+        asList("Wrocław", "Lublin"),
+        asList("Wrocław", "Gdańsk"),
+        asList("Lublin", "Gdańsk"),
+        asList("Lublin", "Wrocław"));
         return loty;
     }
 }
